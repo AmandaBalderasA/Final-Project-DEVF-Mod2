@@ -1,0 +1,189 @@
+/* Global Style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #432818;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    color: white;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0;
+}
+
+.nav-links li{
+    display: flex;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+.nav-links a:hover{
+    font-weight: bold;
+}
+
+/* Hero Styles */
+.hero{
+    background-image: url("https://t4.ftcdn.net/jpg/03/26/12/23/360_F_326122335_RKvTXMb4RYkIzk94ZoPjkZQe2CUOVnen.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content{
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.hero-content h2{
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content button{
+    font-family: "Roboto Slab", serif;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #432818;
+}
+
+.hero-content button:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+/* Featured products Styles */
+.featured-products .desserts{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.featured-products h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 3rem;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+    color: #6F1D1B;
+}
+
+/* Products */
+.product-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product{
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 340px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.product img{
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.product:hover{
+    transform: translateY(-5px);
+}
+
+.product h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #432818;
+}
+
+.product p{
+    font-family: "Roboto Slab", serif;
+    color: #000000;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/* Desserts */
+.desserts h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 3rem;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+    color: #6F1D1B;
+}
+
+.dessert img{
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer{
+    background-color: #432818;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p{
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
