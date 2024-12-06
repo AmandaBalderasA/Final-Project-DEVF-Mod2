@@ -19,7 +19,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#"><i class="ti ti-home"></i> Inicio</a></li>
-                <li><a href="#">Menú</a></li>
+                <li><a href="#" onclick="redirigir('menu.html')">Menú</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -122,7 +122,22 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Mi Cafetería</p>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Suscribete a nuestras promociones</h3>
+                <form actions="">
+                    <input type="email" placeholcer="Ingresa tu correo electronico" required>
+                    <buttom type="submit">Suscribirse</buttom>
+                </form>
+            </div>
+            <p>&copy; Amanda Balderas 2024</p>
+        </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
