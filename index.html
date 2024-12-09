@@ -7,9 +7,26 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- Icono inicio navbar-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+    <!-- Home icon navbar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 
+    <!-- Coffee icon navbar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Heart icon navbar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Email icon navbar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Facebook icon navbar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Instagram icon navbar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Twitter icon navbar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 <body>
     <header>
@@ -18,10 +35,10 @@
                 <h1>Mi Cafetería</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#"><i class="ti ti-home"></i> Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="redirigir('index.html')"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="#" onclick="redirigir('./menu/menu.html')"><i class="ti ti-mug"></i> Menú</a></li>
+                <li><a href="#" onclick="redirigir('./nosotros/nosotros.html')"><i class="ti ti-heart-handshake"></i>Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('./contacto/contacto.html')"><i class="ti ti-mail"></i>Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -122,7 +139,22 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Mi Cafetería</p>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Suscribete a nuestras promociones</h3>
+                <form actions="">
+                    <input type="email" placeholcer="Ingresa tu correo electronico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <p>&copy; Amanda Balderas 2024</p>
+        </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

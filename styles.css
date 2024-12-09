@@ -25,9 +25,10 @@
 .nav-links{
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 80%;
     padding: 0;
+    margin: 0;
 }
 
 .nav-links li{
@@ -43,7 +44,16 @@
     font-weight: 300;
 }
 
+.nav-links i{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
 .nav-links a:hover{
+    font-weight: bold;
+}
+
+.nav-links i:hover{
     font-weight: bold;
 }
 
@@ -84,6 +94,7 @@
     cursor: pointer;
     border-radius: 30px;
     color: #432818;
+    transition: transform 0.5s ease, font-weight 0.5s ease;
 }
 
 .hero-content button:hover{
@@ -165,11 +176,105 @@
     color: #6F1D1B;
 }
 
+.desserts-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dessert{
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 340px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
 .dessert img{
     width: 300px;
     height: 300px;
     margin-top: 15px;
     border-radius: 8px;
+}
+
+.dessert:hover{
+    transform: translateY(-5px);
+}
+
+.dessert h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #432818;
+}
+
+.dessert p{
+    font-family: "Roboto Slab", serif;
+    color: #000000;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/* Nuestro equipo */
+.team{
+    background-color: #fdf0d5;
+}
+
+.team h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 3rem;
+    display: flex;
+    margin: 40px 0;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.person{    
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.person img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.person img:hover {
+    transform: scale(1.05);
+}
+
+.person h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.person p{
+    font-family: "Roboto Slab", serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 /* Footer */
@@ -181,6 +286,70 @@ footer{
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+.social-media{
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    color: white; 
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    transform: scale(1.05);
+}
+
+.newsletter{
+    margin-bottom: 20px;
+}
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    width: 70%; 
+    max-width: 300px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: none; 
+    border-radius: 5px; 
+    outline: none; 
+}
+
+.newsletter input[type="email"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
+}
+
+.newsletter h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 200;
+}
+
+.newsletter button {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    background-color: white; 
+    color: #432818; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.newsletter button:hover {
+    transform: scale(1.1);
+    font-weight: bold;
 }
 
 footer p{
