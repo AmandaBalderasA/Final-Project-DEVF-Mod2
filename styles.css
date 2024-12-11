@@ -239,11 +239,18 @@
 .team-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .person{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     width: 200px;
     text-align: center;
@@ -355,4 +362,37 @@ footer{
 footer p{
     font-family: "Roboto Slab", serif;
     font-weight: 300;
+}
+
+@media screen and (max-width:780px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    logo h1{
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+
+    .nav-links li{
+        width: 100%;
+        display: block;
+    }
+
+    .nav-links a{
+        padding: 8px 0;
+        text-align: center;
+    }
+    .hero h2{
+        font-size: 2rem;
+    }
 }
