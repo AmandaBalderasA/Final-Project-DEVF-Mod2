@@ -70,7 +70,10 @@
 .hero-content{
     font-family: "Roboto Slab", serif;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .hero-content h2{
@@ -94,37 +97,171 @@
     cursor: pointer;
     border-radius: 30px;
     color: #432818;
-    transition: transform 0.5s ease, font-weight 0.5s ease;
 }
 
 .hero-content button:hover{
-    transform: scale(1.1);
     font-weight: bold;
 }
 
+/* h2 tittle */
+.hot-drinks-section h2, .sandwiches h2, .cold-drinks-section h2, .desserts-section h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 3rem;
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+    color: #6F1D1B;
+}
 
+/* h3 tittle */
+.sandwich h3, .hot-drink h3, .cold-drink h3, .dessert h3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #432818;
+    padding: 5px 5px;
+}
 
+/* p paragraph */
+.sandwich p, .hot-drink p, .cold-drink p, .dessert p{
+    color: #000000;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/* Hot drinks */
+.hot-drinks-section{
+    padding: 30px 60px 100px 60px;
+}
+
+.hot-drinks-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1ref);
+    grid-template-rows: repeat(2, 350px);
+    gap: 20px;
+    grid-template-areas: 
+    "hot-drink1 hot-drink1 hot-drink2 hot-drink3"
+    "hot-drink1 hot-drink1 hot-drink4 hot-drink5";
+}
+
+.hot-drink:nth-child(1) {grid-area: hot-drink1;}
+.hot-drink:nth-child(2) {grid-area: hot-drink2;}
+.hot-drink:nth-child(3) {grid-area: hot-drink3;}
+.hot-drink:nth-child(4) {grid-area: hot-drink4;}
+.hot-drink:nth-child(5) {grid-area: hot-drink5;}
+
+.hot-drink{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hot-drink:hover{
+    transform: translateY(-5px);
+}
+
+.hot-drink img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.hot-drink:nth-child(1) img {
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Cold drinks */
+.cold-drinks-section{
+    background-color: #fdf0d5;
+    padding: 30px 60px 100px 60px;
+}
+
+.cold-drinks-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1ref);
+    grid-template-rows: repeat(3, 400px);
+    gap: 20px;
+    grid-template-areas: 
+    "cold-drink1 cold-drink3 cold-drink3"
+    "cold-drink2 cold-drink5 cold-drink5"
+    "cold-drink4 cold-drink6 cold-drink6"
+}
+
+.cold-drink:nth-child(1) {grid-area: cold-drink1;}
+.cold-drink:nth-child(2) {grid-area: cold-drink2;}
+.cold-drink:nth-child(3) {grid-area: cold-drink3;}
+.cold-drink:nth-child(4) {grid-area: cold-drink4;}
+.cold-drink:nth-child(5) {grid-area: cold-drink5;}
+.cold-drink:nth-child(6) {grid-area: cold-drink6;}
+
+.cold-drink{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.cold-drink:hover{
+    transform: translateY(-5px);
+}
+
+.cold-drink img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.cold-drink ul{
+    list-style: none;
+    color: #000000;
+    font-weight: 200;
+    font-size: 18px;
+}
 
 /* Sandwiches */
+.sandwiches{
+    background-color: white;
+    padding: 30px 60px 100px 60px;
+}
+
 .sandwiches-list{
     display: grid;
     grid-template-columns: repeat(4, 1ref);
-    grid-template-rows: repeat(2, 250px);
+    grid-template-rows: repeat(2, 350px);
     gap: 20px;
     grid-template-areas: 
-    "sandwich1 sandwich1 sandwich2 sandwich3"
-    "sandwich1 sandwich1 sandwich4 sandwich5";
-}
-
-.sandwich{
-    border: 1px solid gray;
-    padding: 20px;
-}
-.sandwich img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    "sandwich1 sandwich2 sandwich5 sandwich5"
+    "sandwich3 sandwich4 sandwich5 sandwich5";
 }
 
 .sandwich:nth-child(1) {grid-area: sandwich1;}
@@ -133,30 +270,277 @@
 .sandwich:nth-child(4) {grid-area: sandwich4;}
 .sandwich:nth-child(5) {grid-area: sandwich5;}
 
-.sandwiches h2{
-    font-family: "Roboto Slab", serif;
-    font-weight: 800;
-    font-size: 3rem;
-    display: flex;
-    margin-bottom: 40px;
-    justify-content: center;
-    text-align: center;
-    color: #6F1D1B;
-}
-
 .sandwich{
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    padding: 20px;
-    width: 340px;
-    margin: 30px;
+    font-family: "Roboto Slab", serif;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
-
 }
 
 .sandwich:hover{
     transform: translateY(-5px);
+}
+
+.sandwich img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.sandwich:nth-child(5) img {
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Desserts */
+.desserts-section{
+    background-color: #fdf0d5;
+    padding: 30px 60px 100px 60px;
+}
+
+.desserts-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1ref);
+    grid-template-rows: repeat(4, 280px);
+    gap: 20px;
+    grid-template-areas: 
+    "dessert1 dessert2 dessert4 dessert4"
+    "dessert1 dessert2 dessert4 dessert4"
+    "dessert5 dessert5 dessert3 dessert6"
+    "dessert5 dessert5 dessert3 dessert6";
+}
+
+.dessert:nth-child(1) {grid-area: dessert1;}
+.dessert:nth-child(2) {grid-area: dessert2;}
+.dessert:nth-child(3) {grid-area: dessert3;}
+.dessert:nth-child(4) {grid-area: dessert4;}
+.dessert:nth-child(5) {grid-area: dessert5;}
+.dessert:nth-child(6) {grid-area: dessert6;}
+
+.dessert{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.dessert:hover{
+    transform: translateY(-5px);
+}
+
+.dessert img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.dessert:nth-child(4) img, .dessert:nth-child(5) img{
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer{
+    background-color: #432818;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-media{
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    color: white; 
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    transform: scale(1.05);
+}
+
+.newsletter{
+    margin-bottom: 20px;
+}
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    width: 70%; 
+    max-width: 300px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: none; 
+    border-radius: 5px; 
+    outline: none; 
+}
+
+.newsletter input[type="email"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
+}
+
+.newsletter h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 200;
+}
+
+.newsletter button {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    background-color: white; 
+    color: #432818; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.newsletter button:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+footer p{
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hot-drinks-list, 
+    .cold-drinks-list, 
+    .sandwiches-list, 
+    .desserts-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hot-drink img, 
+    .cold-drink img, 
+    .sandwich img, 
+    .dessert img {
+        width: 180px; 
+        height: 180px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: auto;
+        gap: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-content button {
+        font-size: 0.9rem; 
+        padding: 8px 15px;
+    }
+
+    .hot-drinks-list, 
+    .cold-drinks-list, 
+    .sandwiches-list, 
+    .desserts-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .hot-drink img, 
+    .cold-drink img, 
+    .sandwich img, 
+    .dessert img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .hot-drink:nth-child(1) img, 
+    .cold-drink:nth-child(1) img, 
+    .sandwich:nth-child(5) img, 
+    .dessert:nth-child(4) img, 
+    .dessert:nth-child(5) img {
+        width: 250px; 
+        height: 250px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .newsletter input[type="email"] {
+        width: 90%;
+    }
 }

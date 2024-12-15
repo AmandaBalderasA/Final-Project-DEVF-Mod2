@@ -1,3 +1,322 @@
-body{
-    background-color: aliceblue;
+/* Global Style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: "Roboto Slab", serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #432818;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    color: white;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li{
+    display: flex;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+.nav-links i{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.nav-links a:hover{
+    font-weight: bold;
+}
+
+.nav-links i:hover{
+    font-weight: bold;
+}
+
+/* Contact section*/
+
+.contact-section h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #6F1D1B;
+}
+
+.contact-section h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+
+.contact-section p{
+    font-family: "Roboto Slab", serif;
+    color: #000000;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-form{
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-family: "Roboto Slab", serif; 
+    font-size: 16px; 
+    color: #432818;
+    font-weight: 400; 
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
+    font-family: "Roboto Slab", serif;
+    width: 70%; 
+    max-width: 500px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    outline: none; 
+    text-align: center;
+}
+
+.contact-form input[type="text"]:focus, .contact-form input[type="email"]:focus, .contact-form textarea {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
+}
+
+.contact-form button{
+    font-family: "Roboto Slab", serif;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #432818;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+    transition: transform 0.5s ease, font-weight 0.5s ease;
+}
+
+.contact-form button:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.contact-details {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+    color: #432818;
+    margin: 20px auto;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.contact-details ul li i {
+    font-size: 1.2rem;
+    color: #6F1D1B;
+}
+
+/* Footer */
+footer{
+    background-color: #432818;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-media{
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    color: white; 
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    transform: scale(1.05);
+}
+
+.newsletter{
+    margin-bottom: 20px;
+}
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    width: 70%; 
+    max-width: 300px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: none; 
+    border-radius: 5px; 
+    outline: none; 
+}
+
+.newsletter input[type="email"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
+}
+
+.newsletter h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 200;
+}
+
+.newsletter button {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    background-color: white; 
+    color: #432818; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.newsletter button:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+footer p{
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+
+/* Media Queries */
+
+/* Pantallas medianas (tabletas, max-width 992px) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-section p, .contact-section h3 {
+        font-size: 1rem;
+    }
+
+    .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .contact-details ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas pequeñas (móviles, max-width 576px) */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section p, .contact-section h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+        width: 90%;
+    }
+
+    .contact-details ul li {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 10px 5px;
+    }
 }

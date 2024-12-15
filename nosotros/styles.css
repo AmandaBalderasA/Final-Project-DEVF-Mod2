@@ -1,3 +1,325 @@
-body{
-    background-color: antiquewhite;
+/* Global Style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: "Roboto Slab", serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #432818;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    color: white;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li{
+    display: flex;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+.nav-links i{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.nav-links a:hover{
+    font-weight: bold;
+}
+
+.nav-links i:hover{
+    font-weight: bold;
+}
+
+/* Sobre nosotros */
+.sobre-nosotros-section{
+    background-color: white;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nosotros h2, .mision h2, .porque-elegirnos h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 3rem;
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+    color: #6F1D1B;
+}
+
+.nosotros p{
+    color: #000000;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.nosotros img{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.mision{
+    background-color: #fdf0d5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mision img{
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.mision p{
+    font-family: "Roboto Slab", serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 20px 10px;
+}
+
+.porque-elegirnos{
+    padding: 30px 60px 100px 60px;
+}
+
+.porque-elegirnos-content{
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto Slab", serif;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.porque-elegirnos img {
+    width: 600px; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.porque-elegirnos-content ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+
+.porque-elegirnos-content ul li {
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    background-color: #432818;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-media{
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    color: white; 
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    transform: scale(1.05);
+}
+
+.newsletter{
+    margin-bottom: 20px;
+}
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    width: 70%; 
+    max-width: 300px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: none; 
+    border-radius: 5px; 
+    outline: none; 
+}
+
+.newsletter input[type="email"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7); 
+}
+
+.newsletter h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 200;
+}
+
+.newsletter button {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    background-color: white; 
+    color: #432818; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.newsletter button:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+footer p{
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+/* Estilos para pantallas medianas (tabletas, max-width 992px) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        width: 100%; 
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nosotros img, .mision img, .porque-elegirnos img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .mision img {
+        max-width: 500px; 
+    }
+
+    .porque-elegirnos-content {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+
+    .mision p, .nosotros p {
+        font-size: 16px; 
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles, max-width 576px) */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column; 
+        width: auto;
+    }
+
+    .nosotros img, .mision img, .porque-elegirnos img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .nosotros h2, .mision h2, .porque-elegirnos h2 {
+        font-size: 2rem; 
+    }
+
+    .nosotros p, .mision p, .porque-elegirnos-content ul li {
+        font-size: 14px; 
+    }
+
+    .porque-elegirnos-content {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .newsletter input[type="email"] {
+        width: 90%; 
+    }
+
+    .newsletter button {
+        width: 50%; 
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }

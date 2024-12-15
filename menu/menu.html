@@ -31,28 +31,136 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 <body>
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="logo">
                 <h1>Mi Cafetería</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#" onclick="redirigir('index.html')"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="#" onclick="redirigir('../index.html')"><i class="ti ti-home"></i> Inicio</a></li>
                 <li><a href="#" onclick="redirigir('./menu/menu.html')"><i class="ti ti-mug"></i> Menú</a></li>
-                <li><a href="#" onclick="redirigir('./nosotros/nosotros.html')"><i class="ti ti-heart-handshake"></i>Nosotros</a></li>
-                <li><a href="#" onclick="redirigir('./contacto/contacto.html')"><i class="ti ti-mail"></i>Contacto</a></li>
+                <li><a href="#" onclick="redirigir('../nosotros/nosotros.html')"><i class="ti ti-heart-handshake"></i>Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('../contacto/contacto.html')"><i class="ti ti-mail"></i>Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <h2>El mejor café de la ciudad</h2>
-            <p>Disfruta de una experiencia única con nuestros granos seleccionados.</p>
-            <button>Ver Menú</button>
+            <h2>Descubre nuestro Menú</h2>
+            <p>Explora una deliciosa variedad de bebidas, postres y platillos preparados con ingredientes frescos y de la mejor calidad.</p>
+            <button class="button-hot-coffee" onclick="redirigir('#hot-drinks-section')">Bebidas calientes</button>
+            <button class="button-cold-coffee" onclick="redirigir('#cold-drinks-section')">Bebidas frías</button>
         </div>
     </section>
 
+    <!-- Bebidas calientes -->
+    <section class="hot-drinks-section">
+        <h2>Bebidas calientes</h2>
+        <div class="hot-drinks-list">
+            <!-- Café americano -->
+            <div class="hot-drink">
+                <img src="https://srdelights.com/cdn/shop/files/AmericanCoffee.png?v=1718024474" alt="Café americano">
+                <h3>Café americano</h3>
+                <p>Un clásico que nunca pasa de moda. Nuestro café americano es la combinación perfecta de agua caliente y espresso, resaltando el sabor puro y profundo de nuestros granos cuidadosamente seleccionados. Ideal para quienes buscan energía y simplicidad en cada sorbo.</p>
+            </div>
+
+            <!-- Cappuccino -->
+            <div class="hot-drink">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_-Fg5pUeDw20WbWce-qRyRx_BU_NTrQ7MQ&s" alt="Capuccino">
+                <h3>Cappuccino</h3>
+                <p>Espresso aromático con leche vaporizada y una capa espesa de espuma suave.</p>
+            </div>
+
+            <!-- Latte Macchiato -->
+            <div class="hot-drink">
+                <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/155108.jpg" alt="Latte Macchiato">
+                <h3>Latte Macchiato</h3>
+                <p>Leche al vapor servida suavemente en un vaso alto, seguida por un espresso que se vierte lentamente.</p>
+            </div>
+
+            <!-- Chocolate caliente -->
+            <div class="hot-drink">
+                <img src="https://images.mrcook.app/recipe-image/01911053-4391-737d-b69d-7563a2020c8e" alt="Chocolate caliente">
+                <h3>Chocolate caliente</h3>
+                <p>Una bebida preparada con leche espumosa y un toque de dulzura que reconforta en cada sorbo.</p>
+            </div>
+
+            <!-- Espresso -->
+            <div class="hot-drink">
+                <img src="https://www.jdeprofessional.es/contentassets/97919da7bad2403a85447173a47acc6e/espressomobile.png?preset=two-halves-image-mobile-mobile&width=750" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>El clásico café italiano: intenso, aromático y perfecto para los amantes de un sabor auténtico en una pequeña taza.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bebidas frías -->
+    <section class="cold-drinks-section">
+        <h2>Bebidas frías</h2>
+        <div class="cold-drinks-list">
+            <!-- Cold Brew -->
+            <div class="cold-drink">
+                <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F9eada0d203bfb580d801b478edd553465c7afb52" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <p>Un café suave y refrescante preparado con un método de infusión lenta en frío, resaltando sus notas naturales y su sabor equilibrado.</p>
+            </div>
+
+            <!-- Iced Latte -->
+            <div class="cold-drink">
+                <img src="https://cookhousediary.com/wp-content/uploads/2023/04/foamy-iced-oat-milk-latte-in-jar-cover.jpeg" alt="Iced Latte">
+                <h3>Iced Latte</h3>
+                <p>Una mezcla deliciosa de espresso, leche fría y hielo, ideal para quienes disfrutan de un café con cuerpo pero refrescante.</p>
+            </div>
+
+            <!-- Frapuccino -->
+            <div class="cold-drink">
+                <img src="https://images.aws.nestle.recipes/original/2024_10_28T11_04_59_badun_images.badun.es_82c0d9edbe53_frapuccino_de_chocolate.jpg" alt="Frapuccino">
+                <h3>Frapuccino</h3>
+                <p>Una bebida cremosa y llena de sabor. Nuestros frappuccinos combinan café, leche y hielo con tus sabores favoritos:</p>
+                <ul>
+                    <li>Vainilla: Dulce y suave, un clásico que encanta.</li>
+                    <li>Mocha: La mezcla perfecta de café y chocolate.</li>
+                    <li>Caramelo: Dulzura intensa con un toque de salsa de caramelo.</li>
+                </ul>
+            </div>
+
+            <!-- Limonada con hierbabuena -->
+            <div class="cold-drink">
+                <img src="https://www.hola.com/horizon/landscape/cd43e77c4a2f-receta-limonada-hierbabuena-limon-t.jpg" alt="Limonada con hierbabuena">
+                <h3>Limonada con hierbabuena</h3>
+                <p>Una bebida refrescante y natural que combina el sabor cítrico de los limones frescos con el toque aromático de la hierbabuena.</p>
+            </div>
+
+            <!-- Té helado -->
+            <div class="cold-drink">
+                <img src="https://imag.bonviveur.com/te-helado.jpg" alt="Té helado">
+                <h3>Té helado</h3>
+                <p>Bebidas ligeras y refrescantes para todos los gustos:</p>
+                <ul>
+                    <li>Durazno: Un té helado con un toque dulce y afrutado.</li>
+                    <li>Limón: Clásico y ácido, ideal para calmar la sed.</li>
+                    <li>Frutos Rojos: Un sabor vibrante y ligeramente dulce, perfecto para los amantes de las frutas.</li>
+                </ul>
+            </div>
+
+            <!-- Smoothies de frutas -->
+            <div class="cold-drink">
+                <img src="https://odisaequipa.com.mx/wp-content/uploads/2022/02/smoothies-de-frutas.png" alt="Smoothies de frutas">
+                <h3>Smoothies de frutas</h3>
+                <p>Bebidas llenas de energía y sabor, hechas con frutas frescas y un toque de yogur o leche:</p>
+                <ul>
+                    <li>Fresa: Dulce y clásica, perfecta para cualquier momento.</li>
+                    <li>Mango: Exótico y tropical, ideal para transportarte a un verano eterno.</li>
+                    <li>Plátano: Cremoso y nutritivo, perfecto para empezar el día con energía.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sandwiches -->
     <section class="sandwiches">
         <h2>Nuestros sandwiches</h2>
         <div class="sandwiches-list">
@@ -92,6 +200,74 @@
             </div>
         </div>
     </section>
-    <script src="./main.js"></script>
+
+    <!-- Postres -->
+    <section class="desserts-section">
+        <h2>Postres</h2>
+        <div class="desserts-list">
+
+            <!-- Banana split -->
+            <div class="dessert">
+                <img src="https://cdn7.kiwilimon.com/brightcove/10625/640x640/10625.jpg.webp" alt="Banana split">
+                <h3>Banana split</h3>
+                <p>Un postre clásico que combina plátano fresco con bolas de helado, crema batida, y una deliciosa decoración de chocolate y cerezas.</p>
+            </div>
+
+            <!-- Fresas con cremas -->
+            <div class="dessert">
+                <img src="https://www.pastelesdlulu.com/wp-content/uploads/2024/03/fresasconcrema09-7-jpeg.webp" alt="Fresas con cremas">
+                <h3>Fresas con cremas</h3>
+                <p>Disfruta de la frescura de las fresas dulces mezcladas con crema ligera, un toque de azúcar y el equilibrio perfecto de sabor.</p>
+            </div>
+
+            <!-- Croissant de avellana -->
+            <div class="dessert">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV8WOW7d71utP2tjzNEoK3TkPa-Jt6y-ojCg&s" alt="Croissant de avellana">
+                <h3>Croissant de avellana</h3>
+                <p>Un croissant esponjoso y crujiente relleno con una suave y cremosa pasta de avellanas que deleita tu paladar en cada bocado.</p>
+            </div>
+
+            <!-- Tiramisú -->
+            <div class="dessert">
+                <img src="https://sarasellos.com/wp-content/uploads/2024/04/tiramisu3.jpg" alt="Tiramisú">
+                <h3>Tiramisú</h3>
+                <p>Un postre clásico italiano que combina capas de bizcocho suave empapado en café con un cremoso mascarpone y un toque de cacao espolvoreado. Cada bocado es una mezcla perfecta de sabores intensos y texturas suaves que lo convierten en un deleite irresistible.</p>
+            </div>
+
+            <!-- Panqué de limón -->
+            <div class="dessert">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/bfb46f3007c478e1f18d00bfa8416a4c.jpg" alt="Panqué de limón">
+                <h3>Panqué de limón</h3>
+                <p>Un panqué suave y esponjoso con un toque cítrico que deleita el paladar. Preparado con jugo y ralladura de limón fresco, tiene el equilibrio perfecto entre dulzura y acidez. Ideal para acompañar con una taza de café o té en cualquier momento del día.</p>
+            </div>
+
+            <!-- Galletas de doble chocolate -->
+            <div class="dessert">
+                <img src="https://cheforopeza.com.mx/wp-content/uploads/2017/11/galletas-doble-chocolate-web.jpg" alt="Galletas de doble chocolate">
+                <h3>Galletas de doble chocolate</h3>
+                <p>Para los amantes del chocolate. Estas galletas tienen una base de chocolate suave y están cargadas con trozos de chocolate oscuro, ofreciendo una explosión de sabor en cada bocado.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Suscribete a nuestras promociones</h3>
+                <form actions="">
+                    <input type="email" placeholcer="Ingresa tu correo electronico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <p>&copy; Amanda Balderas 2024</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
 </body>
 </html>

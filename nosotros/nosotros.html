@@ -5,8 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Home icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Coffee icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Heart icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Email icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Facebook icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Instagram icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Twitter icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
+
 <body>
-    <h1>Nosotros</h1>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Mi Cafetería</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="redirigir('../index.html')"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="#" onclick="redirigir('../menu/menu.html')"><i class="ti ti-mug"></i> Menú</a></li>
+                <li><a href="#" onclick="redirigir('./nosotros.html')"><i class="ti ti-heart-handshake"></i>Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('../contacto/contacto.html')"><i class="ti ti-mail"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Nosotros -->
+    <section class="sobre-nosotros-section">
+        <div class="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Creemos que cada taza de café cuenta una historia. Desde 2015, hemos estado comprometidos con ofrecer 
+                a nuestros clientes la mejor experiencia en café, bebidas y postres. Nuestro enfoque está en la calidad, la sostenibilidad y el cuidado por cada detalle. Trabajamos con granos seleccionados de 
+                productores locales y de comercio justo, asegurándonos de que cada sorbo sea tan único como nuestros clientes.
+            </p>
+            <img src="https://images.adsttc.com/media/images/5ce4/10df/284d/d14b/fd00/0036/newsletter/TIERRA_GARAT23.jpg?1558450392" alt="Ambiente de la cafetería">
+        </div>
+        
+        <div class="mision">
+            <h2>Nuestra Misión</h2>
+            <img src="https://img.freepik.com/fotos-premium/trabajadores-cafeteria-participan-interaccion-amistosa-que-sugiere-trabajo-equipo-servicio-al-cliente-calidad-ambiente-calido-acogedor-cafeteria_132358-33261.jpg" alt="Empleados cafeteria">
+            <p>Crear un espacio acogedor donde las personas puedan disfrutar de café de calidad, deliciosos platillos y un ambiente único.</p>
+        </div>
+        
+        <div class="porque-elegirnos">
+            <h2>Por qué elegirnos</h2>
+            <div class="porque-elegirnos-content">
+                <img src="https://cdn.theforkmanager.com/static/styles/blog_article_header_image/public/2020-03/1-recibir-clientes-anticiparte-necesidades-restaurante_0.jpg?itok=PhSUOck3" alt="Clientes cafeteria">
+                <ul>
+                    <li>Café 100% orgánico y de comercio justo</li>
+                    <li>Ambiente cálido y acogedor</li>
+                    <li>Postres y platillos frescos, hechos al momento</li>
+                    <li>Wi-Fi gratuito para nuestros clientes</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Suscribete a nuestras promociones</h3>
+                <form actions="">
+                    <input type="email" placeholcer="Ingresa tu correo electronico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <p>&copy; Amanda Balderas 2024</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
 </body>
 </html>

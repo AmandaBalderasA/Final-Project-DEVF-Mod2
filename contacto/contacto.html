@@ -5,8 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Home icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Coffee icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Heart icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Email icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Facebook icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Instagram icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- Twitter icon navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 <body>
-    <h1>Contacto</h1>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Mi Cafetería</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="redirigir('../index.html')"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="#" onclick="redirigir('../menu/menu.html')"><i class="ti ti-mug"></i> Menú</a></li>
+                <li><a href="#" onclick="redirigir('../nosotros.html')"><i class="ti ti-heart-handshake"></i>Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('.contacto.html')"><i class="ti ti-mail"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contáctanos</h2>
+        <p>Queremos saber de ti. Llena el formulario o utiliza cualquiera de los medios de contacto para comunicarte con nosotros.</p>
+        
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h3>También puedes contactarnos en:</h3>
+                <ul>
+                    <li><i class="ti ti-phone"></i> Teléfono: +52 555 123 4567</li>
+                    <li><i class="ti ti-mail"></i> Email: info@micafeteria.com</li>
+                    <li><i class="ti ti-map-pin"></i> Dirección: Calle Ficticia 123, Ciudad, País</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#"><i class="ti ti-brand-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Suscribete a nuestras promociones</h3>
+                <form actions="">
+                    <input type="email" placeholcer="Ingresa tu correo electronico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <p>&copy; Amanda Balderas 2024</p>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
 </body>
 </html>
